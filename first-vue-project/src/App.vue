@@ -2,13 +2,13 @@
   <div id="app">
     <nav-bar></nav-bar>
     <base-hero></base-hero>
-    <div class="virtues">
-      <base-virtue>
-        <template #image>image</template>
-        <template #title>Title</template>
-        <template #description>description</template>
-      </base-virtue>
-    </div>
+    <base-download></base-download>
+    <base-virtue></base-virtue>
+    <recent-work></recent-work>
+    <welcome-to-unify></welcome-to-unify>
+    <our-clients></our-clients>
+    <footer-menu></footer-menu>
+    <base-footer></base-footer>
   </div>
 </template>
 
@@ -19,34 +19,30 @@
   import NavBar from "./components/NavBar";
   import BaseHero from "./components/BaseHero";
   import BaseVirtue from "./components/BaseVirtue";
+  import BaseDownload from "./components/BaseDownload";
+  import RecentWork from "./components/RecentWork";
+  import WelcomeToUnify from "./components/WelcomeToUnify";
+  import OurClients from "./components/OurClients";
+  import FooterMenu from "./components/FooterMenu";
+  import BaseFooter from "./components/BaseFooter";
   export default {
-    components: {BaseVirtue, BaseHero, NavBar}
+    components: {
+      BaseFooter,
+      FooterMenu, OurClients, WelcomeToUnify, RecentWork, BaseDownload, BaseVirtue, BaseHero, NavBar}
   }
 </script>
 
 <style>
   body, html{
-    margin: 0px;
-    padding: 0px;
+    width: 1600px;
+    margin: 0;
+    padding: 0;
   }
 </style>
 
 <style lang="scss" scoped>
-  .virtues{
-display:flex;
-  }
+
+
 </style>
 
 
-@font-face{
-
-font-family: 'Open Sans - Semibold';
-
-src: url(../../fonts/open-sans-semibold.ttf);
-
-src: url(../../fonts/open-sans-semibold.ttf) format('ttf')
-
-font-weight: normal;
-
-font-style: normal;
-}

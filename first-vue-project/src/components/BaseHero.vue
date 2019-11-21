@@ -2,8 +2,8 @@
     <div class="base-hero">
         <img class="left" src="../assets/Left.png">
         <div>
-            <p class="text">CLEAN & FRESH
-                FULLY RESPONSIVE
+            <p class="text">
+                CLEAN & FRESH  FULLY RESPONSIVE
                 DESIGN</p>
             <br>
             <p class="small-text">Lorem ipsum dolor amet
@@ -28,6 +28,9 @@
     display: flex;
 }
 
+
+
+
     .text{
         width: 350px;
         height: 145px;
@@ -42,7 +45,7 @@
         margin-bottom: 10px;
     }
     .small-text{
-        width: 200px;
+        width: 216px;
         height: 64px;
         color: #ffffff;
         font-family: "Open Sans - Semibold";
@@ -70,5 +73,15 @@
         opacity: 0.67;
         margin-top: 196px;
         margin-left: 17px;
+    }
+
+    @font-face {
+        font-family:"Open Sans - Semibold";
+        src: url("../../fonts/open-sans-semibold.ttf");
+    }
+
+    @font-face {
+        font-family: "Open Sans";
+        src: url("../../fonts/open-sans.ttf");
     }
 </style>
